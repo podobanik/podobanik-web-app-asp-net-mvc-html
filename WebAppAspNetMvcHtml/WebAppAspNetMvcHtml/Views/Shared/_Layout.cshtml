@@ -9,24 +9,26 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar-collapse navbar-light" style="background-color: #e3f2fd;">
+    <div class="navbar-collapse navbar-light bg-info">
         <div class="container">
 
-            <nav class="navbar-collapse navbar-light" style="background-color: #e3f2fd;">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Клиенты", "Index", "Clients")</li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Услуги", "Index", "Orders")</li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Типы клиентов", "Index", "ClientTypes")</li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Гражданства", "Index", "Citizenships")</li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Список документов", "Index", "AvailableDocuments")</li>
+            <nav class="nnavbar navbar-expand-lg navbar-light bg-info">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li>
+                        <a href="/Clients" class="nav-link">Клиенты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Orders" class="nav-link">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/ClientTypes" class="nav-link">Типы клиентов</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Citizenships" class="nav-link">Гражданства</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/AvailableDocuments" class="nav-link">Список документов</a>
+                    </li>
                 </ul>
             </nav>
             
